@@ -48,7 +48,8 @@ clarify the API,
 It might work on browsers, through [`webpack`](https://webpack.js.org),
 [`browserify`](http://browserify.org), [`parcel-bundler`](https://parceljs.org),
 or similar. However, it has not been tested with any of them, so exercise
-caution. Also, on load, this module includes _all_ of the
+caution. Some translators call to non-CORS-enabled web services. Also, on load,
+this module includes _all_ of the
 [more than 500 translators](https://github.com/zotero/translators) that Zotero
 has. This might not be optimal for web browsing applications.
 [Further discussion here.](https://github.com/cprecioso/zotero-translators/issues/1)
