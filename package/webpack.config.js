@@ -7,7 +7,7 @@ const r = path.resolve.bind(path, __dirname)
 
 /** @type {import("webpack").Configuration} */
 module.exports = {
-  mode: "development",
+  mode: "none",
   entry: r("./src/index.js"),
   output: {
     path: r("dist"),
@@ -40,7 +40,7 @@ module.exports = {
       config: require.resolve("./src/shim/node-config")
     }
   },
-  devtool: false,
+  devtool: "source-map",
   context: __dirname,
   target: "web",
   cache: true,
