@@ -52,7 +52,7 @@ module.exports = {
     ...require("module").builtinModules.filter(m => m !== "fs")
   ],
   node: {
-    process: false,
+    process: true,
     Buffer: false,
     fs: "empty",
     global: true,

@@ -3,5 +3,9 @@
   "workspaces": [
     "package",
     "vendor/*"
-  ]
+  ],
+  "dependencies": {
+    "patch-package": "^6.1.2",
+    "postinstall-postinstall": "^2.0.0"
+  }
 }
