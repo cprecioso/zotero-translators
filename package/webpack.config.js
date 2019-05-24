@@ -64,6 +64,7 @@ module.exports = {
       apply: compiler => {
         compiler.hooks.done.tap("AfterEmitPlugin", () => {
           fs.copyFileSync(r("index.d.ts"), r("dist/index.d.ts"))
+          fs.copyFileSync(r("../readme.md"), r("dist/readme.md"))
 
           const pkg = require("./package.json")
           const zotDeps = require("translation-server/package.json")

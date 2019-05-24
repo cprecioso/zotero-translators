@@ -1,7 +1,21 @@
 {
   "name": "zotero-translators",
   "version": "0.0.1",
-  "dependencies": {},
+  "description": "Translators for Zotero packaged in a node module",
+  "keywords": [
+    "bibtex",
+    "csl",
+    "doi",
+    "json",
+    "translator",
+    "zotero"
+  ],
+  "homepage": "https://github.com/cprecioso/zotero-translators#readme",
+  "bugs": {
+    "url": "https://github.com/cprecioso/zotero-translators/issues"
+  },
+  "repository": "git+https://cprecioso@github.com/cprecioso/zotero-translators.git",
+  "author": "Carlos Precioso <kalprestito@gmail.com>",
   "devDependencies": {
     "@babel/core": "^7.4.4",
     "@babel/types": "^7.4.4",
