@@ -1,0 +1,11 @@
+diff --git a/node_modules/webpack/buildin/global.js b/node_modules/webpack/buildin/global.js
+index 2e7bf0b..4d5ae71 100644
+--- a/node_modules/webpack/buildin/global.js
++++ b/node_modules/webpack/buildin/global.js
+@@ -17,4 +17,6 @@ try {
+ // We return undefined, instead of nothing here, so it's
+ // easier to handle this case. if(!global) { ...}
+
++g = Object.create(g)
++
+ module.exports = g;

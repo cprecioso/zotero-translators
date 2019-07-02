@@ -32,6 +32,17 @@ module.exports = {
           },
           "transform-loader?brfs"
         ]
+      },
+      {
+        test: path.dirname(require.resolve("translation-server/package.json")),
+        use: "imports-loader?this=>global,Zotero=>global.Zotero",
+        exclude: require.resolve("translation-server/src/zotero"),
+        enforce: "post"
+      },
+      {
+        test: require.resolve("translation-server/src/zotero"),
+        use: ["imports-loader?this=>global", "exports-loader?Zotero"],
+        enforce: "post"
       }
     ]
   },

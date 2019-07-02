@@ -1,4 +1,4 @@
-require("translation-server/src/zotero")
+const Zotero = require("translation-server/src/zotero")
 require("translation-server/src/debug").init(
   process.env.DEBUG_LEVEL ? parseInt(process.env.DEBUG_LEVEL) : 1
 )

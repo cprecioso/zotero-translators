@@ -32,6 +32,8 @@
     "brfs": "^2.0.2",
     "deasync": "^0.1.15",
     "detective": "^5.2.0",
+    "exports-loader": "^0.7.0",
+    "imports-loader": "^0.8.0",
     "transform-loader": "^0.2.4",
     "translation-server": "*",
     "typescript": "^3.4.5",
