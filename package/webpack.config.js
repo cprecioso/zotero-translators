@@ -35,7 +35,8 @@ module.exports = {
       },
       {
         test: path.dirname(require.resolve("translation-server/package.json")),
-        use: "imports-loader?this=>global,Zotero=>global.Zotero",
+        use:
+          "imports-loader?this=>global,Translators=>global.Translators,Zotero=>global.Zotero,ItemGetter=>global.ItemGetter,ItemSaver=>global.ItemSaver,wgxpath=>global.wgxpath",
         exclude: require.resolve("translation-server/src/zotero"),
         enforce: "post"
       },
